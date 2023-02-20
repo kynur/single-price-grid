@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 19.4rem;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.main-content {
+    padding: 1.76rem 1.47rem;
+}
+
+.main-title {
+    font-size: 1.22em;
+    color: hsl(179, 62%, 43%);
+}
+
+.main-sub-title {
+    margin-top: 1.5rem;
+    color: hsl(71, 73%, 54%);
+    font-size: .91rem;
+    line-height: 1.3rem;
+}
+
+.main-desc {
+    font-size: .855em;
+    color: hsl(218, 22%, 67%);
+    margin-top: 0.96rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.6rem;
+}
+
+.left-content {
+    padding: 1.55rem 1.47rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(179, 62%, 43%);
+}
+
+.left-title {
+    font-size: 1.1rem;
+}
+
+.left-price {
+    display: flex;
+    align-items: center;
+    margin-top: 1.1rem;
+    color: hsl(204, 43%, 93%);
+    gap: 0.75rem;
+}
+
+.price {
+    font-weight: 700;
+    color: white;
+    font-size: 1.95rem;
+}
+
+.mounth {
+    opacity: .6;
+}
+
+.left-desc {
+    margin-top: 0.5rem;
+    font-size: .976rem;
+}
+
+.sign-up {
+    font-size: .95rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+button {
+    border: none;
+    width: 100%;
+    margin-top: 1.9rem;
+    padding: 0.95rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.267);
+}
+
+button:hover {
+    background-color: hsl(71, 73%, 47%);
+}
+
+.right-content {
+    padding: 1.55rem 1.47rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(179, 47%, 52%);
+}
+
+.right-title {
+    font-size: 1.1rem;
+}
+
+.right-desc {
+    margin-top: 1.1rem;
+    font-size: .86rem;
+    line-height: 1.25rem;
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        display: grid;
+        align-items: center;
+        width: 39.7rem;
+        grid-template-columns: 50%;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.490);
+    }
+
+    .container>div {
+        padding: 2.4rem 2.5rem;
+    }
+
+    .main-content {
+        grid-column: 1/3;
+    }
+
+    .main-title {
+        font-size: 1.46rem;
+    }
+
+    .main-sub-title {
+        font-size: 1.1rem;
+    }
+
+    .main-desc {
+        font-size: .98rem;
+        margin-top: 0.8rem;
+    }
+
+    footer {
+        margin-top: 15px;
+    }
+}
